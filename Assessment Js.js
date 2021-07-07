@@ -77,7 +77,7 @@ let expectdData =[{
   var metadata = inputData.metadata;
   var dimensions = inputData.dimensions;
   var i;
-  for(i=0;i<= 4;i++){
+  for(i=0;metadata.length > i;i++){
     if(metadata[i]['id'] == dimensions[i]['id']){
       if(metadata[i]['id'] == 'dimension_re'){
        obj['Region']= (dimensions[i].values);
